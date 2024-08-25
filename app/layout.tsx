@@ -3,12 +3,11 @@ import { Inter as FontSans } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/theme-provider'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
 import { Sidebar } from '@/components/sidebar'
 import { Toaster } from '@/components/ui/sonner'
 import { AppStateProvider } from '@/lib/utils/app-state'
 import CustomHeader from "@/components/custom-header";
+import CustomFooter from "@/components/custom-footer";
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -52,7 +51,7 @@ export default function RootLayout({
       <body className={cn('font-sans antialiased', fontSans.variable)}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
@@ -60,7 +59,7 @@ export default function RootLayout({
             <CustomHeader />
             {children}
             <Sidebar />
-            <Footer />
+            <CustomFooter />
             <Toaster />
           </AppStateProvider>
         </ThemeProvider>
