@@ -50,6 +50,7 @@ export function ChatPanel({ messages, query }: ChatPanelProps) {
       data.append('input', query)
     }
     const responseMessage = await submit(data)
+    console.log(responseMessage)
     setMessages(currentMessages => [...currentMessages, responseMessage])
   }
 

@@ -15,7 +15,7 @@ type ChatProps = {
 export function Chat({ id, query }: ChatProps) {
   const path = usePathname()
   const [messages] = useUIState()
-
+    console.log(id)
   useEffect(() => {
     if (!path.includes('search') && messages.length === 1) {
       window.history.replaceState({}, '', `/search/${id}`)
