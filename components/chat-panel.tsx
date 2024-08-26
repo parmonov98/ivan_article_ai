@@ -127,16 +127,16 @@ export function ChatPanel({ messages, query }: ChatPanelProps) {
         <div className="relative flex items-center w-full">
           <ChatTumblers onTagsChange={handleTagsChange}/>
         </div>
-        <div className="relative flex items-center w-full">
-          <div className="mt-6">
-            <h5 className="text-xl font-semibold">Active Tags:</h5>
-            <ul className="list-disc list-inside">
-              {selectedTags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        {/*<div className="relative flex items-center w-full">*/}
+        {/*  <div className="mt-6">*/}
+        {/*    <h5 className="text-xl font-semibold">Active Tags:</h5>*/}
+        {/*    <ul className="list-disc list-inside">*/}
+        {/*      {selectedTags.map((tag) => (*/}
+        {/*          <li key={tag}>{tag}</li>*/}
+        {/*      ))}*/}
+        {/*    </ul>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <div className="relative flex items-center w-full">
           <Textarea
               ref={inputRef}
