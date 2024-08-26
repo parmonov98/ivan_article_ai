@@ -14,12 +14,12 @@ const fontSans = FontSans({
   variable: '--font-sans'
 })
 
-const title = 'Morphic'
+const title = 'ИИ ассистент в учебе'
 const description =
-  'A fully open-source AI-powered answer engine with a generative UI.'
+  'Учись быстрее, учись лучше с ИИ ассистентом!'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://morphic.sh'),
+  metadataBase: new URL('https://ivan-article-ai.vercel.app/'),
   title,
   description,
   openGraph: {
